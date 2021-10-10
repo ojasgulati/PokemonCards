@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/flCardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivPokemonCard"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitXY" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/image_over_shadow" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/ivPokemonCard"
+                tools:text="Bulasuras" />
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/hp"
+            layout="@layout/layout_key_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/flCardName" />
+
+        <include
+            android:id="@+id/level"
+            layout="@layout/layout_key_value"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/hp" />
+
+        <include
+            android:id="@+id/types"
+
+            layout="@layout/layout_key_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/level" />
+
+        <include
+            android:id="@+id/subTypes"
+            layout="@layout/layout_key_value"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/types" />
+
+        <include
+            android:id="@+id/attacks"
+            layout="@layout/layout_key_value"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/subTypes" />
+
+        <include
+            android:id="@+id/weakness"
+            layout="@layout/layout_key_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/attacks" />
+
+        <include
+            android:id="@+id/abilities"
+            layout="@layout/layout_key_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/weakness" />
+
+        <include
+            android:id="@+id/resistances"
+            layout="@layout/layout_key_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/abilities" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

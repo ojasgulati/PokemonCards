@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PokemonCards</string>
+    <string name="level">Level</string>
+    <string name="hp">HP</string>
+    <string name="types">Types</string>
+    <string name="subTypes">subTypes</string>
+    <string name="attacks">Attacks</string>
+    <string name="weakness">Weakness</string>
+    <string name="abilities">Abilities</string>
+    <string name="resistances">Resistances</string>
+</resources>
